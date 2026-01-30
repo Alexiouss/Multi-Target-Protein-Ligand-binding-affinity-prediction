@@ -92,3 +92,56 @@ data/
     └─ chembl_affinity_dataset.csv
 
 results/
+## 📊 Datasets
+### Synthetic Dataset
+-Generated on-the-fly
+-Fully configurable via config.json
+-Safe to regenerate for every run
+### ChEMBL-based Dataset
+-Preprocessed CSV format
+-Multi-target binding affinity data
+-Targets are automatically derived from the dataset
+## ⚙️ Configuration
+Two configuration files are used:
+```text
+-config.json
+
+Full experiment configuration (targets, data, model, training).
+```text
+config_ui_run.json
+
+Automatically generated when running experiments via the UI.
+## ▶️ Running the Project
+
+### Install dependencies
+```text
+pip install -r requirements.txt
+### Launch the application
+The entire pipeline is orchestrated from:
+```text
+streamlit run scripts/app_ui.py
+## 🧪 Training & Testing
+-Training and testing are explicitly separated
+-No pretrained models are provided
+-All results must be reproduced by the user
+## ⚠️ Limitations
+-Research prototype, not production code
+-Quantum execution is simulated
+-Protein structure and sequence are not yet encoded
+-Computational cost grows rapidly with qubits
+## 🔮 Future Work
+-Explicit protein encoding
+-Molecule–residue attention
+-Hardware-aware quantum circuits
+-Execution on real quantum hardware
+## 📖 Citation
+If you use this code in academic work, please cite the diploma thesis:
+```text
+@mastersthesis{AlexandrosZacharakis2026QuantumDrugDiscovery,
+  title  = {Quantum machine learning algorithms and their applications},
+  author = {Alexandros Zacharakis},
+  year   = {2026},
+  school = {University of Patras}
+}
+## 📜 License
+This project is released under the MIT License, allowing academic and research use with attribution.
