@@ -92,6 +92,7 @@ data/
     └─ chembl_affinity_dataset.csv
 
 results/
+```
 ## 📊 Datasets
 ### Synthetic Dataset
 -Generated on-the-fly
@@ -105,21 +106,23 @@ results/
 Two configuration files are used:
 ```text
 -config.json
-
+```
 Full experiment configuration (targets, data, model, training).
 ```text
 config_ui_run.json
-
+```
 Automatically generated when running experiments via the UI.
 ## ▶️ Running the Project
 
 ### Install dependencies
 ```text
 pip install -r requirements.txt
+```
 ### Launch the application
 The entire pipeline is orchestrated from:
 ```text
 streamlit run scripts/app_ui.py
+```
 ## 🧪 Training & Testing
 -Training and testing are explicitly separated
 -No pretrained models are provided
@@ -143,5 +146,6 @@ If you use this code in academic work, please cite the diploma thesis:
   year   = {2026},
   school = {University of Patras}
 }
+```
 ## 📜 License
 This project is released under the MIT License, allowing academic and research use with attribution.
