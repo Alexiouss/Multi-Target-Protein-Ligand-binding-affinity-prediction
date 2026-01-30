@@ -115,8 +115,20 @@ Automatically generated when running experiments via the UI.
 ## ▶️ Running the Project
 
 ### Install dependencies
-```text
+First, install the required Python dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+### CUDA support (optional but recommended)
+This project supports **GPU acceleration via CUDA**, but CUDA must be installed independently by the user, according to their system, GPU, and NVIDIA driver version.
+To enable CUDA support:
+1. Ensure you have a compatible NVIDIA GPU.
+2. Install the appropriate NVIDIA drivers for your system.
+3. Install a CUDA-enabled version of PyTorch that matches your CUDA runtime.
+For example, for CUDA 11.8:
+```bash
+pip install --index-url https://download.pytorch.org/whl/cu118 torch torchvision torchaudio
 ```
 ### Launch the application
 The entire pipeline is orchestrated from:
