@@ -1,0 +1,29 @@
+# Core numerical / data
+numpy
+pandas
+scipy
+scikit-learn
+
+# Deep learning
+torch
+
+# PyTorch Geometric (core)
+torch-geometric
+
+# Chemistry
+rdkit
+
+# Quantum
+pennylane
+qiskit
+
+# ChEMBL client
+chembl-webresource-client
+
+# UI / visualization
+streamlit
+matplotlib
+tqdm
+
+# Survival / metrics
+lifelines
