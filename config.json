@@ -1,0 +1,31 @@
+{
+  "model": {
+    "n_targets": 5,
+    "feature_dim": 128,
+    "pca_path": "pca_amplitude.npz"
+
+  },
+  "training": {
+    "batch_size": 4,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "num_workers": 0
+  },
+  "targets": {
+    "CDK2": "Cyclin-dependent kinase 2 - Cell cycle regulation",
+    "DRD2": "Dopamine receptor D2 - Neurotransmitter signaling",
+    "HIV1_PR": "HIV-1 protease - Viral protein processing",
+    "hERG": "Human ether-a-go-go related gene - Cardiac ion channel",
+    "ESR1": "Estrogen receptor alpha - Hormone signaling"
+  },
+  "chembl_target_map": {
+  "CHEMBL203": "Epidermal growth factor receptor",
+  "CHEMBL206": "Estrogen receptor",
+  "CHEMBL279": "Vascular endothelial growth factor receptor 2"
+  },
+  "data": {
+    "synthetic_samples": 5000,
+    "test_split": 0.2,
+    "val_split": 0.2
+  }
+}
